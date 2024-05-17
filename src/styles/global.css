@@ -54,6 +54,14 @@ small, li {
 }
 
 /* Navigation Bar */
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--background);
+}
+
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -288,6 +296,15 @@ html.light {
     background-color: var(--background-light);
     color: var(--text-light);
 }
+
+.light .header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--background-light);
+}
+
 
 .light .navbar__title > a {
     color: var(--text-light);

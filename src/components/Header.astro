@@ -1,9 +1,21 @@
 ---
-import Navigation from './Navigation.astro';
+import ThemeIcon from "./ThemeIcon.astro";
 ---
-<header>
-    <nav transition:persist >
-        <Navigation />
+
+<header class="header">
+    <nav transition:persist>
+        <div class="navbar">
+            <div class="navbar__title">
+                <a href="/">Mehmet Emin Mumcu</a>
+            </div>
+            <div class="navbar__menu">
+                <a href="/about/">About</a>
+                <a href="/posts/">Posts</a>
+                <a href="https://github.com/ttomczak3/Milky-Way" target="_blank"
+                    >GitHub</a
+                >
+                <ThemeIcon />
+            </div>
+        </div>
     </nav>
 </header>
-
