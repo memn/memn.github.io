@@ -162,14 +162,23 @@ small, li {
     font-family: var(--body);
     font-size: 1.5rem;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
+}
+
+.card__subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-indent: 0;
+    text-align: left;
+    margin: 0.5rem 0 0;
+    color: gray;
 }
 
 .card__txt {
     font-size: 1rem;
     line-height: 1.5;
     text-indent: 0;
-    text-align: center;
+    text-align: left;
     margin: 0.5rem 0 0;
 }
 
