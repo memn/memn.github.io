@@ -4,9 +4,10 @@ interface Props {
     title: string;
     description: string;
     date: string;
+    word_count: number;
 }
 
-const { url, date, title, description } = Astro.props;
+const { url, date, title, description, word_count } = Astro.props;
 ---
 
 <li class="card">
@@ -14,9 +15,11 @@ const { url, date, title, description } = Astro.props;
         <h3 class="card__title">
             {title}
         </h3>
-        <p class="card__subtitle">
-            {date}
-        </p>
+        <ul class="card__subtitle">
+            <li>{date},</li>
+            <li>{word_count} words,</li>
+            <li>{(word_count / 200).toFixed()} minutes to read</li>
+        </ul>
         <p class="card__txt">
             {description}
         </p>

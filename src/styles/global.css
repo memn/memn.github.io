@@ -171,14 +171,21 @@ small, li {
     text-indent: 0;
     text-align: left;
     margin: 0.5rem 0 0;
+    list-style: none;
+    padding-left: 0;
     color: gray;
+}
+
+.card__subtitle li {
+    display: inline;
+    margin-right: 0.2rem;
 }
 
 .card__txt {
     font-size: 1rem;
     line-height: 1.5;
     text-indent: 0;
-    text-align: left;
+    text-align: justify;
     margin: 0.5rem 0 0;
 }
 
